@@ -2,76 +2,79 @@
 <html lang="en">
 
    <head>
-      <meta charset="UTF-8">
-      <title>MurakumoJP Mini Site</title>
-      <link type="text/css" rel="stylesheet" href="Assets/css/style.css">
+      <meta charset="UTF-8" />
+      <title>Murakumo Mini Site</title>
+      <!-- CSS -->
+      <link rel="stylesheet" href="Assets/css/index.css" />
+      <!-- JS -->
       <script type="text/javascript" src="Assets/js/jquery.min.js"></script>
    </head>
 
-   <body>
-      <!-- Start Preloader -->
-      <div id="page-preloader" class="preloader">
-         <div class="loader"></div>
-      </div>
-      <!-- End Preloader -->
+   <body class="body_main" id="TestBild">
       <div class="app">
-         <!-- Header Start -->
-         <div class="header">
-            <div class="menu">
-               <div class="bt-list">
-                  <a id="bt-menu" href="https://twitter.com/MurakumoJP">Twitter</a>
-                  <a id="bt-menu" href="https://myanimelist.net/profile/MurakumoJP">MyAnimeList</a>
-                  <a id="bt-menu" href="https://github.com/Murakumo-JP">GitHub</a>
+         <!--Preloader-->
+         <div id="page-preloader" class="preloader">
+            <div class="loader"></div>
+         </div>
+         <!--User Info-->
+         <div class="app_user">
+            <div class="user_profile">
+               <!--User Avatar and Name-->
+               <div class="user_avatar">
+                  <img src="Assets/images/ProfileApp.png" />
+               </div>
+               <div class="user_info">
+                  <div class="user">
+                     <div class="user_name"><a>Murakumo Mini Site</a></div>
+                  </div>
+                  <div class="user_social">
+                     <div class="us_bg">
+                        <a class="bt-social" href="https://twitter.com/MurakumoJP">Twitter</a>
+                        <a class="bt-social" href="https://myanimelist.net/profile/MurakumoJP">MyAnimeList</a>
+                        <a class="bt-social" href="https://github.com/Murakumo-JP">GitHub</a>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
-         <!-- Content Start -->
-         <div class="app-content">
-            <div class="app-list">
+         <!--Content-->
+         <div class="app_content">
+            <!--List-->
+            <div class="app_spoler_name">MyAnimeList Style</div>
+            <div class="app_block_list">
                <!-- Block -->
-               <div class="app-block app-new">
-                  <div class="block-bg"><img src="../MyAnimeList-CSS/AzurBlur/AzurBlur.jpg"></div>
-                  <div class="style-info">
-                     <div class="app-title">
-                        <h1>Azur Blur</h1>
-                     </div>
-                     <div class="app-bt">
-                        <div class="app-bt-list">
-                           <a id="bt-app" href="https://murakumo-jp.github.io/MyAnimeList-CSS/AzurBlur/">Installation
-                              and
-                              Settings</a>
-                           <a id="bt-app" href="https://myanimelist.net/forum/?topicid=1868018">MyAnimeList Forum</a>
-                        </div>
-                     </div>
+               <div class="app_block">
+                  <div class="content_image">
+                     <img src="Assets/images/Style/AzurBlur.jpg" />
+                  </div>
+                  <div class="content_info">
+                     <a id="bt-app" href="../MyAnimeList-CSS/AzurBlur/">Installation and
+                        Settings</a>
+                     <a id="bt-app" href="https://myanimelist.net/forum/?topicid=1868018">MyAnimeList Forum</a>
                   </div>
                </div>
                <!-- Block -->
-               <div class="app-block">
-                  <div class="block-bg"><img src="Assets/images/Style/EorzeaCollection.jpg"></div>
-                  <div class="style-info">
-                     <div class="app-title">
-                        <h1>Eorzea Collection</h1>
-                     </div>
-                     <div class="app-bt">
-                        <div class="app-bt-list">
-                           <a id="bt-app"
-                              href="https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/">Installation and
-                              Settings</a>
-                           <a id="bt-app" href="https://myanimelist.net/forum/?topicid=1726107">MyAnimeList Forum</a>
-                        </div>
-                     </div>
+               <div class="app_block">
+                  <div class="content_image">
+                     <img src="Assets/images/Style/EorzeaCollection.jpg" />
                   </div>
-               </div>
-               <!-- end -->
-               <div class="copyright">
-                  <span>
-                     All rights to images belong to their authors.
-                  </span>
+                  <div class="content_info">
+                     <a id="bt-app" href="../MyAnimeList-CSS/Eorzea_Collection/">Installation and
+                        Settings</a>
+                     <a id="bt-app" href="https://myanimelist.net/forum/?topicid=1868018">MyAnimeList Forum</a>
+                  </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- script -->
+      </div>
+      <div class="Copyright">
+         <span>Design and code of <a href="https://twitter.com/MurakumoJP">MurakumoJP</a></span>
+      </div>
+      <div class="nome_app_top">
+         <a href="#" class="app_top">Back to top</a>
+      </div>
+      <!--- Script --->
       <script type="text/javascript" src="Assets/js/main.js"></script>
    </body>
 
