@@ -6,7 +6,7 @@
 
 06.10.2020: Update the design and structure of the site
 
-08.12.2021: New design v.1.1
+08.12.2021: New design v.1.0.1
 
 ## MIT License
 
