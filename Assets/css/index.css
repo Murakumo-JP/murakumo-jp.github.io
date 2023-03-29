@@ -27,6 +27,9 @@ body {
   background-attachment: fixed;
 }
 /* Back Top */
+.app {
+  width: 100%;
+}
 .nome_app_top {
   display: none;
   bottom: 20px;
@@ -42,20 +45,6 @@ body {
   padding: 10px;
   border-radius: 10px;
   text-decoration: none;
-}
-.Copyright {
-  width: 990px;
-  padding: 5px;
-  background-color: var(--bg-color);
-  border-top: 1px solid #2b2d44;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  font-family: monospace;
-  margin: 0 auto;
-}
-.Copyright span a {
-  color: #1bff00;
 }
 /* Webkit */
 ::-webkit-scrollbar {

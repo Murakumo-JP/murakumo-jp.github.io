@@ -1,29 +1,26 @@
-.app {
-   width: 100%;
-}
 .app_user {
    width: 1000px;
    height: 150px;
    margin: 0 auto;
    position: relative;
+   border-bottom: 1px solid var(--bg-profile-color);
+   backdrop-filter: blur(5px);
 }
 .user_profile {
    height: 150px;
-   background-color: var(--bg-color);
+   background-color: rgb(0 0 0 / 50%);
 }
 .user_avatar {
-   height: 120px;
-   margin: 5px 0 0px 15px;
-   padding: 5px;
-   background-color: var(--bg-profile-color);
-   border-radius: var(--border-radius);
+   width: 150px;
+   height: 150px;
    position: inherit;
    float: left;
 }
 .user_avatar img {
-   width: 120px;
-   height: 120px;
-   border-radius: var(--border-radius);
+   width: 130px;
+   height: 130px;
+   border-radius: 10px;
+   margin: 10px;
 }
 .user_info {
    position: inherit;
@@ -40,8 +37,6 @@
 }
 .user_name a {
    color: #fff;
-}
-.user_name a {
    position: absolute;
    line-height: 65px;
    font-size: 28px;
@@ -57,28 +52,33 @@
 .us_bg {
    margin-left: 10px;
    height: 100%;
-   width: auto;
    line-height: 6;
-   display: flex;
-   justify-content: flex-start;
-   flex-direction: row;
-   align-items: center;
 }
 .bt-social {
-   display: inline-flex;
-   border-radius: 20px 0 20px 0;
+   display: inline-block;
+   width: 41px;
+   height: 41px;
    line-height: 65px;
-   margin-left: 2px;
-   height: 35px;
-   padding: 5px 10px 5px 10px;
+   border-radius: 50%;
+   background-size: 20px;
+   background-repeat: no-repeat;
+   background-position: center;
    background-color: #171a2180;
-   color: white;
    transition: var(--transition);
-   align-items: center;
 }
 .bt-social:hover {
-   background-color: #171a21cc;
+   background-color: #171a21b3;
 }
+#twitter {
+   background-image: url(../images/svg/twitter.svg);
+}
+#github {
+   background-image: url(../images/svg/github.svg);
+}
+#web {
+   background-image: url(../images/svg/web.svg);
+}
+/* Content */
 .app_content {
    width: 980px;
    padding: 10px;
@@ -86,8 +86,9 @@
    top: 0;
    bottom: 0;
    margin: 0 auto;
-   background-color: var(--bg-color);
+   background-color: #00000080;
    z-index: 0;
+   backdrop-filter: blur(5px);
 }
 .app_spoler_name {
    font-family: "Motiva Sans", Sans-serif;
@@ -101,44 +102,31 @@
    text-transform: uppercase;
    background-color: var(--bg-profile-color);
    border-radius: var(--border-radius);
-}
-.app_block_list {
-   width: 980px;
-   border-radius: var(--border-radius);
-   margin-top: 4px;
+   cursor: pointer;
 }
 .app_block {
-   margin-bottom: 5px;
    padding: 5px;
-   background-color: var(--bg-profile-color);
-   border-radius: var(--border-radius);
+   display: inline-block;
+   position: relative;
 }
 .content_image img {
+   border-radius: 10px;
    width: 100%;
-   border-radius: var(--border-radius);
-   box-shadow: 1px 1px 5px #00000080;
-}
-#bt-app {
-   margin-left: 10px;
-   font-weight: 700;
-   font-size: 16px;
-   padding: 0 20px;
-   display: inline-flex;
-   line-height: 40px;
-   text-decoration: none;
-   position: relative;
-   color: #fff;
-   background-color: var(--bg-profile-color);
-   border-radius: 20px 0 20px 0;
-   transition: var(--transition);
-}
-#bt-app:hover {
-   background-color: #2b2d44cc;
 }
 .content_info {
-   background-color: var(--bg-color);
-   border-radius: var(--border-radius);
-   padding: 10px 0 10px 0;
-   display: flex;
-   justify-content: flex-start;
+   position: absolute;
+   background-color: rgb(0 0 0 / 60%);
+   backdrop-filter: blur(10px);
+   bottom: 80px;
+   padding: 5px;
+   border-radius: 0 5px 5px 0;
+}
+#bt-app {
+   text-decoration: none;
+   color: white;
+   font-size: 16px;
+   font-family: Segoe UI Black;
+}
+.forum {
+   bottom: 45px;
 }
