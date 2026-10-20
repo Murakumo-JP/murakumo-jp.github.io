@@ -4,48 +4,54 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MurakumoJP</title>
+<meta name="description" content="Handcrafted custom CSS styles for MyAnimeList by MurakumoJP.">
 <link rel="shortcut icon" type="image/x-icon" href="Assets/favicon.ico"/>
 <link rel="stylesheet" href="Assets/css/index.css" />
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <header class="hero">
   <img src="/Assets/images/header.png" alt="">
-  <div class="bar">
-    <div class="logo pill">MurakumoJP<em>むらくも</em></div>
-    <nav class="links pill">
+  <div class="bar"><div class="in">
+    <div class="who">MurakumoJP<em lang="ja">むらくも</em></div>
+    <nav aria-label="Links">
       <a href="https://twitter.com/MurakumoJP">X</a>
       <a href="https://github.com/Murakumo-JP">GitHub</a>
       <a href="https://myanimelist.net/profile/MurakumoJP">MyAnimeList</a>
       <a href="https://boosty.to/murakumo/donate">Boosty</a>
     </nav>
-  </div>
+  </div></div>
 </header>
 
 <main class="wrap">
-  <section class="intro">
-    <h1>Styles for MyAnimeList</h1>
-  </section>
-
   <article class="item">
     <div class="num">01</div>
     <div><h2>Eorzea Collection</h2>
-      <div class="acts"><a href="/MyAnimeList-CSS/Eorzea_Collection/">Installation and Settings</a><a class="alt" href="https://myanimelist.net/forum/?topicid=1726107">Forum</a></div></div>
-    <div class="img" style="background-image:url('/Assets/images/Style/EorzeaCollection.jpg')"></div>
+      <div class="acts"><a href="/MyAnimeList-CSS/Eorzea_Collection/" data-guide="Eorzea_Collection" data-key="eorzea">Installation and Settings</a><a class="alt" href="https://myanimelist.net/forum/?topicid=1726107">Forum</a></div></div>
+    <div class="img" role="button" tabindex="0" aria-label="Open preview" style="background-image:url('/Assets/images/Style/EorzeaCollection.jpg')"></div>
   </article>
   <article class="item">
     <div class="num">02</div>
     <div><h2>AzurBlur</h2>
-      <div class="acts"><a href="/MyAnimeList-CSS/AzurBlur/">Installation and Settings</a><a class="alt" href="https://myanimelist.net/forum/?topicid=1868018">Forum</a></div></div>
-    <div class="img" style="background-image:url('/Assets/images/Style/AzurBlur.jpg')"></div>
+      <div class="acts"><a href="/MyAnimeList-CSS/AzurBlur/" data-guide="AzurBlur" data-key="azurblur">Installation and Settings</a><a class="alt" href="https://myanimelist.net/forum/?topicid=1868018">Forum</a></div></div>
+    <div class="img" role="button" tabindex="0" aria-label="Open preview" style="background-image:url('/Assets/images/Style/AzurBlur.jpg')"></div>
   </article>
   <article class="item">
     <div class="num">03</div>
     <div><h2>eScape</h2>
-      <div class="acts"><a href="/MyAnimeList-CSS/eScape/">Installation and Settings</a></div></div>
-    <div class="img" style="background-image:url('/Assets/images/Style/eScape.jpg')"></div>
+      <div class="acts"><a href="/MyAnimeList-CSS/eScape/" data-guide="eScape" data-key="escape">Installation and Settings</a></div></div>
+    <div class="img" role="button" tabindex="0" aria-label="Open preview" style="background-image:url('/Assets/images/Style/eScape.jpg')"></div>
   </article>
 
   <footer><span>Design and Code Murakumo-JP © 2024</span><a href="https://github.com/Murakumo-JP">github.com/Murakumo-JP</a></footer>
 </main>
+
+<dialog id="lb"><img alt=""></dialog>
+<button class="totop" aria-label="Back to top">↑</button>
+<dialog id="guide" aria-label="Installation guide">
+  <div class="ghead"><strong>Installation guide</strong><span><a class="ggh" href="#" target="_blank" rel="noopener">GitHub ↗</a><button type="button" class="gclose" aria-label="Close">✕</button></span></div>
+  <div class="gbody"></div>
+</dialog>
+<script type="text/javascript" src="Assets/js/main.js"></script>
 </body>
 </html>
